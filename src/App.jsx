@@ -5,6 +5,7 @@ import Navbar from "./Components/NavBar/Navbar";
 // import DaisyNav from './Components/DaisyNav/DaisyNav';
 import PriceOption from "./Components/PriceOption/PriceOption";
 import RenderLineChart from "./Components/RenderLineChart/RenderLineChart";
+import Phones from "./Components/Phones/Phones";
 function App() {
   const darkTheme = createTheme({
     palette: {
@@ -22,6 +23,7 @@ function App() {
           <PriceOption></PriceOption>
         </div>
         <RenderLineChart></RenderLineChart>
+        <Phones></Phones>
         {/* <DaisyNav></DaisyNav> */}
       </div>
     </>
