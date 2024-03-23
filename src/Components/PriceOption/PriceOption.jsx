@@ -7,8 +7,9 @@ const PriceOption = () => {
       name: "Basic",
       features: [
         { name: "Access to premium features" },
-        { name: "Priority customer support" },
-        { name: "Dedicated account manager" }
+        { name: "Priority customerDedicated account  support" },
+        { name: "Dedicated account Dedicated account  manager" }
+        
       ],
       price: 9.99,
     },
@@ -16,26 +17,32 @@ const PriceOption = () => {
       id: 2,
       name: "Standard",
       features: [
-        { name: "Access to standard features" },
-        { name: "Priority customer support" }
+        { name: "Access to premium features" },
+        { name: "Priority customer support" },
+        { name: "Dedicated account manager" },
+        { name: "Personalized onboarding sessions" },
+        { name: "Integration with third-party apps" }
       ],
+  
       price: 19.99,
     },
     {
       id: 3,
       name: "Premium",
       features: [
-        { name: "Access to basic features" },
-        { name: "Limited customer support" }
+        { name: "Access to standard features" },
+        { name: "Priority customer support" },
+        { name: "Advanced analytics dashboard" },
+        { name: "Customizable templates" }
       ],
       price: 29.99,
     },
   ];
 
   return (
-    <div>
-      <h2 className="text-5xl">Best Prices In the town</h2>
-      <div className="grid grid-cols-3 gap-6 px-10">
+    <div className="">
+      <h2 className="text-5xl text-center py-10">Best Prices In the town</h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {priceOptions.map((option) => (
           <PriceOps option={option} key={option.id}></PriceOps>
         ))}
